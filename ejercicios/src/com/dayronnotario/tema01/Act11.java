@@ -5,16 +5,16 @@ import java.io.*;
 public class Act11 {
     private File file;
 
-    public Act11(File file) {
-            this.file = file;
+    public Act11(String directorio, String archivo) {
+            this.file = File(directorio + "/" + archivo);
         }
 
     public File getFile() {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
 
     public void concatLines(String directorio, String archivo, String archivo2, String archivo3) throws IOException {

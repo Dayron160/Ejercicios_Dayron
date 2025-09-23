@@ -8,16 +8,16 @@ import java.io.IOException;
 public class Act8 {
     private File file;
 
-    public Act8(File file) {
-            this.file = file;
-        }
+    public Act8(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
+    }
 
     public File getFile() {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
 
     public void leerArchivo(String directorio, String archivo) throws IOException {

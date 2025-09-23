@@ -6,6 +6,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         File file = new File("ficheros");
+	String dir = "ficheros";
+	String arch = "";
 
         System.out.println();
         System.out.println("Act. 1");
@@ -57,7 +59,7 @@ public class Main {
         System.out.println("Act. 5");
         System.out.println();
 
-        GestionArchivos a5 = new GestionArchivos(file);
+        GestionArchivos a5 = new GestionArchivos(dir, arch);
 
         System.out.println("Escribe la ruta del directorio");
         String directorio = null;
@@ -126,7 +128,7 @@ public class Main {
         System.out.println("Act. 8");
         System.out.println();
 
-        Act8 a8 = new Act8(file);
+        Act8 a8 = new Act8(dir, arch);
 
         a8.leerArchivo(args[0], args[1]);
 
@@ -134,7 +136,7 @@ public class Main {
         System.out.println("Act. 9");
         System.out.println();
 
-        Act9 a9 = new Act9(file);
+        Act9 a9 = new Act9(dir, arch);
 
         System.out.println("Escribe la ruta del directorio");
         directorio = null;
@@ -164,7 +166,7 @@ public class Main {
         System.out.println("Act. 10");
         System.out.println();
 
-        Act10 a10 = new Act10(file);
+        Act10 a10 = new Act10(dir, arch);
 
         System.out.println("Escribe la ruta del directorio");
         directorio = null;
@@ -201,7 +203,7 @@ public class Main {
         System.out.println("Act. 11");
         System.out.println();
 
-        Act11 a11 = new Act11(file);
+        Act11 a11 = new Act11(dir, arch);
 
         System.out.println("Escribe la ruta del directorio");
         directorio = null;

@@ -8,16 +8,16 @@ import java.io.IOException;
 public class Act9 {
     private File file;
 
-    public Act9(File file) {
-            this.file = file;
+    public Act9(String directorio, String archivo) {
+            this.file = File(directorio + "/" + archivo);
         }
 
     public File getFile() {
         return file;
     }
 
-    public void setFile(File file) {
-        this.file = file;
+    public void setFile(String directorio, String archivo) {
+        this.file = File(directorio + "/" + archivo);
     }
 
     public boolean comparar(String directorio, String archivo, String archivo2) throws IOException {
