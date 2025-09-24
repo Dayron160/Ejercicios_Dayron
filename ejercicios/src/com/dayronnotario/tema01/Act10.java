@@ -37,8 +37,12 @@ public class Act10 {
         File file3 = new File(directorio + "/" + archivo3);
         FileWriter fw = new FileWriter(file3);
         BufferedWriter bw = new BufferedWriter(fw);
-
+        
         bw.write(lineatotal + linea2total);
+        fr.close();
+        fr2.close();
+        br.close();
+        br2.close();
         bw.close();
         fw.close();
     }
