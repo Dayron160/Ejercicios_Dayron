@@ -44,6 +44,10 @@ public class Act11 {
         BufferedWriter bw = new BufferedWriter(fw);
 
         bw.write(lineaArchivo3);
+        fr.close();
+        fr2.close();
+        br.close();
+        br2.close();
         bw.close();
         fw.close();
     }
